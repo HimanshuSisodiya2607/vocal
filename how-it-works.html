@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works — VocalFluxStudio</title>
+<meta name="description" content="See how VocalFluxStudio manages projects from brief and quote through production, QC, review and final delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#050507;--panel:#100d16;--line:rgba(255,255,255,.10);
+ --text:#f5f2f8;--muted:#aaa6b5;--purple:#8b5cf6;--purple2:#a78bfa;--max:1200px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 75% 0%,rgba(124,58,237,.18),transparent 34%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(var(--max),92%);margin:auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;border:1px solid rgba(167,139,250,.45);background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;font-weight:700;font-size:14px}
+.hero{text-align:center;padding:105px 0 70px}.eyebrow{display:inline-block;padding:7px 12px;border:1px solid rgba(167,139,250,.25);border-radius:999px;color:#c4b5fd;background:rgba(139,92,246,.08);font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+h1{font-size:clamp(44px,7vw,76px);line-height:1.03;letter-spacing:-3px;margin:22px auto 20px;max-width:850px}h1 span{background:linear-gradient(90deg,#fff,#a78bfa);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:700px;margin:auto;color:var(--muted);font-size:18px}
+.section{padding:70px 0}.head{text-align:center;margin-bottom:40px}.head h2{font-size:36px;letter-spacing:-1px;margin:0 0 8px}.head p{color:var(--muted);margin:0}
+.steps{position:relative;max-width:900px;margin:auto}.steps:before{content:"";position:absolute;left:31px;top:35px;bottom:35px;width:1px;background:linear-gradient(var(--purple),rgba(139,92,246,.05))}
+.step{position:relative;display:grid;grid-template-columns:64px 1fr;gap:22px;margin-bottom:25px}
+.circle{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#100b18;border:1px solid rgba(167,139,250,.45);color:#c4b5fd;font-weight:800;z-index:1}
+.stepbox{padding:25px 28px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018))}
+.stepbox h3{margin:0 0 7px;font-size:21px}.stepbox p{margin:0;color:var(--muted);font-size:14px}
+.badge{display:inline-block;margin-top:13px;font-size:11px;padding:5px 9px;border-radius:7px;background:rgba(139,92,246,.09);border:1px solid rgba(167,139,250,.16);color:#ddd6fe}
+.model{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.model-card{padding:28px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
+.model-card h3{margin:0 0 8px}.model-card p{color:var(--muted);font-size:14px;margin:0}
+.highlight{margin-top:18px;padding:25px;border-radius:18px;border:1px solid rgba(167,139,250,.22);background:rgba(139,92,246,.07);color:#d8d1de;font-size:14px}
+.cta{margin:20px 0 80px;padding:45px;text-align:center;border-radius:24px;border:1px solid rgba(167,139,250,.25);background:radial-gradient(circle at 50% 0%,rgba(139,92,246,.16),transparent 65%),#0e0b13}
+.cta h2{font-size:34px;margin:0 0 10px}.cta p{color:var(--muted);max-width:620px;margin:0 auto 22px}
+@media(max-width:800px){.model{grid-template-columns:1fr}}
+@media(max-width:560px){.hero{padding:75px 0 45px}h1{letter-spacing:-2px}.section{padding:48px 0}.step{grid-template-columns:50px 1fr;gap:13px}.circle{width:50px;height:50px}.steps:before{left:24px}.stepbox{padding:21px}.cta{padding:32px 20px}}
+</style>
+</head>
+<body>
+<script src="nav.js"></script>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="eyebrow">The VocalFluxStudio Process</div>
+<h1>One brief.<br><span>One managed workflow.</span></h1>
+<p>From your first project brief to final delivery, our production team coordinates the people, resources, schedules and quality checks required to move your project forward.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="head"><h2>How It Works</h2><p>A clear production journey with defined stages and controlled communication.</p></div>
+<div class="steps">
+<div class="step"><div class="circle">01</div><div class="stepbox"><h3>Submit Your Project</h3><p>Tell us about the project, services required, source and target languages, duration, versions, expected delivery and budget indication.</p><span class="badge">Project Brief</span></div></div>
+<div class="step"><div class="circle">02</div><div class="stepbox"><h3>NDA &amp; Secure File Submission</h3><p>Where required, project confidentiality is established before sensitive materials are shared. Files are handled through controlled project access.</p><span class="badge">NDA / Controlled Access</span></div></div>
+<div class="step"><div class="circle">03</div><div class="stepbox"><h3>Production Assessment</h3><p>Our team reviews the scope, identifies the production requirements and determines the resources, workflow and timeline needed.</p><span class="badge">Planning</span></div></div>
+<div class="step"><div class="circle">04</div><div class="stepbox"><h3>Commercial Discussion &amp; Quote</h3><p>The project scope is discussed and the commercial proposal is prepared. Your stated budget is an input for discussion—not an automatic final quote.</p><span class="badge">Commercials</span></div></div>
+<div class="step"><div class="circle">05</div><div class="stepbox"><h3>Approval &amp; Production Setup</h3><p>Once the scope and commercial terms are approved, the production team schedules the work and coordinates the required artists, studios and specialists.</p><span class="badge">Production Planning</span></div></div>
+<div class="step"><div class="circle">06</div><div class="stepbox"><h3>Production</h3><p>Work moves through the agreed production pipeline—dubbing, editing, DI, VFX, animation, sound or complete post-production as required.</p><span class="badge">In Production</span></div></div>
+<div class="step"><div class="circle">07</div><div class="stepbox"><h3>Quality Control</h3><p>Outputs are reviewed against the project's technical and creative requirements before they move to client review.</p><span class="badge">QC</span></div></div>
+<div class="step"><div class="circle">08</div><div class="stepbox"><h3>Client Review</h3><p>Review versions are shared through the project workflow. Feedback can be organized against the relevant version and, where applicable, timecode.</p><span class="badge">Review / Revisions</span></div></div>
+<div class="step"><div class="circle">09</div><div class="stepbox"><h3>Final Delivery</h3><p>After final approval, the approved deliverables are prepared according to the agreed delivery requirements and released through controlled delivery.</p><span class="badge">Final Delivery</span></div></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="head"><h2>Choose How You Work With Us</h2><p>VocalFluxStudio can adapt the production model to your project.</p></div>
+<div class="model">
+<div class="model-card"><h3>Managed</h3><p>Give us the brief and let our production team plan and coordinate the required resources from start to finish.</p></div>
+<div class="model-card"><h3>Client-Selected</h3><p>Where appropriate, you can specify preferred professionals, studios or production resources while we manage the project workflow.</p></div>
+<div class="model-card"><h3>Hybrid</h3><p>Combine your preferred resources with VocalFluxStudio's production coordination, QC and delivery management.</p></div>
+</div>
+<div class="highlight"><b>Important:</b> VocalFluxStudio is designed as a managed production partner, not an open freelancer marketplace. Client communication and project coordination remain within the production workflow.</div>
+</div>
+</section>
+
+<section class="container">
+<div class="cta">
+<h2>Ready to start a project?</h2>
+<p>Share your brief with us. We'll review the requirements and take the project into the appropriate production workflow.</p>
+<a class="btn" href="index.html?quote=1">Request a Quote</a>
+</div>
+</section>
+</main>
+
+<script src="footer.js"></script>
+</body>
+</html>

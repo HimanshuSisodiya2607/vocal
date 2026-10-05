@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — VocalFluxStudio</title>
+<meta name="description" content="VocalFluxStudio — Managed dubbing and post-production services for production houses, OTT, TV, brands and creators.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#050507;
+  --panel:#100d16;
+  --panel2:#15101d;
+  --line:rgba(255,255,255,.10);
+  --text:#f5f2f8;
+  --muted:#aaa6b5;
+  --purple:#8b5cf6;
+  --purple2:#a78bfa;
+  --max:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:
+  radial-gradient(circle at 75% 0%,rgba(124,58,237,.18),transparent 34%),
+  radial-gradient(circle at 0% 35%,rgba(88,28,135,.10),transparent 30%),
+  var(--bg);
+  color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),92%);margin:auto}
+
+
+
+
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 18px;border-radius:10px;border:1px solid rgba(167,139,250,.45);
+  background:linear-gradient(135deg,#8b5cf6,#6d28d9);
+  color:#fff;font-weight:700;font-size:14px;box-shadow:0 8px 30px rgba(109,40,217,.18)
+}
+.hero{padding:105px 0 70px;text-align:center}
+.eyebrow{
+  display:inline-block;padding:7px 12px;border:1px solid rgba(167,139,250,.25);
+  border-radius:999px;color:#c4b5fd;background:rgba(139,92,246,.08);
+  font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase
+}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;letter-spacing:-3px;margin:22px auto 20px;max-width:900px}
+h1 span{background:linear-gradient(90deg,#fff,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:700px;margin:auto;color:var(--muted);font-size:18px}
+.section{padding:70px 0}
+.section-head{margin-bottom:30px}
+.section-head h2{font-size:34px;letter-spacing:-1.2px;margin:0 0 8px}
+.section-head p{margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{
+  position:relative;overflow:hidden;padding:26px;min-height:230px;
+  background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));
+  border:1px solid var(--line);border-radius:18px;transition:.25s ease
+}
+.card:hover{transform:translateY(-5px);border-color:rgba(167,139,250,.38);box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.num{color:#8b5cf6;font-size:12px;font-weight:800;letter-spacing:1px}
+.icon{width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.2);color:#c4b5fd;font-size:20px;margin:18px 0 16px}
+#complete-post{grid-column:span 2}
+.card h3{margin:0 0 8px;font-size:21px}
+.card p{color:var(--muted);font-size:14px;margin:0 0 15px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-size:11px;color:#cfc8d6;padding:5px 8px;border-radius:7px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.07)}
+.feature{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch
+}
+.feature-box{
+  border:1px solid var(--line);border-radius:22px;padding:34px;
+  background:linear-gradient(145deg,rgba(139,92,246,.12),rgba(255,255,255,.025))
+}
+.feature-box h2{font-size:36px;line-height:1.1;margin:0 0 15px}
+.feature-box p{color:var(--muted)}
+.list{display:grid;gap:12px;margin-top:24px}
+.list div{display:flex;gap:11px;align-items:flex-start;color:#ddd7e2;font-size:14px}
+.check{color:#a78bfa;font-weight:900}
+.cta{
+  margin:35px 0 80px;padding:45px;border:1px solid rgba(167,139,250,.25);
+  border-radius:24px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(139,92,246,.16),transparent 65%),#0e0b13
+}
+.cta h2{margin:0 0 10px;font-size:34px}
+.cta p{color:var(--muted);max-width:620px;margin:0 auto 22px}
+@media(max-width:800px){
+  .grid{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  #complete-post{grid-column:auto}
+  .hero{padding:75px 0 45px}h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}
+  .section{padding:48px 0}.feature-box{padding:25px}.cta{padding:32px 20px}
+}
+</style>
+</head>
+<body>
+<script src="nav.js"></script>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Managed Production Services</div>
+    <h1>Everything your project needs.<br><span>Managed end to end.</span></h1>
+    <p>From dubbing and sound to editing, DI, VFX and animation, VocalFluxStudio coordinates the production process from planning through QC and final delivery.</p>
+  </div>
+</section>
+
+<section class="section" id="services">
+<div class="container">
+  <div class="section-head">
+    <h2>Our Services</h2>
+    <p>Choose one service or let our production team manage the complete post-production pipeline.</p>
+  </div>
+
+  <div class="grid">
+    <article class="card" id="dubbing"><div class="num">01</div><div class="icon">◉</div><h3>Dubbing</h3><p>End-to-end multilingual dubbing managed through one production team.</p><div class="tags"><span class="tag">Voice Artists</span><span class="tag">Translation</span><span class="tag">Direction</span><span class="tag">Recording</span><span class="tag">QC</span></div></article>
+    <article class="card" id="editing"><div class="num">02</div><div class="icon">✦</div><h3>Editing</h3><p>Editorial support for narrative, commercial, digital and long-form content.</p><div class="tags"><span class="tag">Offline Edit</span><span class="tag">Online</span><span class="tag">Versions</span><span class="tag">Delivery</span></div></article>
+    <article class="card" id="di-colour"><div class="num">03</div><div class="icon">◈</div><h3>DI / Colour</h3><p>Colour finishing designed to bring consistency, mood and polish to the final picture.</p><div class="tags"><span class="tag">Colour Grade</span><span class="tag">Look Development</span><span class="tag">Finishing</span></div></article>
+    <article class="card" id="vfx"><div class="num">04</div><div class="icon">◆</div><h3>VFX</h3><p>Managed visual-effects production for shots, sequences and larger post pipelines.</p><div class="tags"><span class="tag">Compositing</span><span class="tag">Cleanup</span><span class="tag">CG</span><span class="tag">Shot Management</span></div></article>
+    <article class="card" id="animation"><div class="num">05</div><div class="icon">△</div><h3>2D &amp; 3D Animation</h3><p>Animation production for entertainment, branded content, explainers and digital projects.</p><div class="tags"><span class="tag">2D</span><span class="tag">3D</span><span class="tag">Motion</span><span class="tag">Design</span></div></article>
+    <article class="card" id="foley"><div class="num">06</div><div class="icon">♫</div><h3>Foley</h3><p>Detailed movement and performance sound crafted to support the picture.</p><div class="tags"><span class="tag">Footsteps</span><span class="tag">Props</span><span class="tag">Sync</span></div></article>
+    <article class="card" id="bgm"><div class="num">07</div><div class="icon">♪</div><h3>BGM / Music</h3><p>Music and background scoring coordination for the project's creative requirements.</p><div class="tags"><span class="tag">BGM</span><span class="tag">Music</span><span class="tag">Scoring</span></div></article>
+    <article class="card" id="sound-design"><div class="num">08</div><div class="icon">⌁</div><h3>Sound Design</h3><p>Creative sound layers that build atmosphere, impact and sonic identity.</p><div class="tags"><span class="tag">SFX</span><span class="tag">Ambience</span><span class="tag">Design</span></div></article>
+    <article class="card" id="mixing"><div class="num">09</div><div class="icon">◌</div><h3>Mixing</h3><p>Professional final mixes prepared for the project's intended delivery requirements.</p><div class="tags"><span class="tag">Dialogue</span><span class="tag">Music</span><span class="tag">Effects</span><span class="tag">Mastering</span></div></article>
+    <article class="card" id="graphics"><div class="num">10</div><div class="icon">▣</div><h3>Graphics</h3><p>Motion and static graphics support for titles, promos, branded and digital content.</p><div class="tags"><span class="tag">Titles</span><span class="tag">Motion Graphics</span><span class="tag">Promos</span></div></article>
+    <article class="card" id="complete-post"><div class="num">11</div><div class="icon">∞</div><h3>Complete Post</h3><p>One managed pipeline combining multiple services under a single production workflow.</p><div class="tags"><span class="tag">Planning</span><span class="tag">Production</span><span class="tag">QC</span><span class="tag">Delivery</span></div></article>
+  </div>
+</div>
+</section>
+
+<section class="section" id="workflow">
+<div class="container">
+  <div class="feature">
+    <div class="feature-box">
+      <div class="eyebrow">One Production Partner</div>
+      <h2>You bring the project.<br>We manage the process.</h2>
+      <p>VocalFluxStudio is designed as a managed production partner—not a freelancer marketplace. We coordinate the right professionals, studios and production resources around your project's requirements.</p>
+      <a class="btn" href="index.html?quote=1">Start a Project</a>
+    </div>
+    <div class="feature-box">
+      <h2>From brief to delivery.</h2>
+      <div class="list">
+        <div><span class="check">✓</span><span><b>01 — Brief</b><br>Share project scope, services, languages, duration and deadline.</span></div>
+        <div><span class="check">✓</span><span><b>02 — Planning</b><br>Our production team assesses the requirements and plans resources.</span></div>
+        <div><span class="check">✓</span><span><b>03 — Production</b><br>Artists, studios and specialists are coordinated through the project.</span></div>
+        <div><span class="check">✓</span><span><b>04 — QC</b><br>Outputs pass through the required quality-control process.</span></div>
+        <div><span class="check">✓</span><span><b>05 — Delivery</b><br>Approved final assets are prepared and delivered according to the project.</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="container" id="contact">
+  <div class="cta">
+    <h2>Have a project in mind?</h2>
+    <p>Tell us what you are producing, what services you need and your expected delivery timeline. Our team can review the scope and take the conversation forward.</p>
+    <a class="btn" href="index.html?quote=1">Request a Quote</a>
+  </div>
+</section>
+</main>
+
+<script src="footer.js"></script>
+</body>
+</html>
